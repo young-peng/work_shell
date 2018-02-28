@@ -1,0 +1,17 @@
+rotate 168
+hourly
+
+size 512M
+copytruncate
+dateext
+dateformat -%Y%m%d_%s
+missingok
+
+compress
+# delaycompress
+
+notifempty
+
+/data/deploy/logs/nginx/*.log
+{
+}
